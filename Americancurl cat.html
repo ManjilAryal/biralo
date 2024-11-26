@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            margin: 50px;
+            font-size: 50px;
+        }
+        .pic{
+            margin-left: 25%;
+        }
+        .build-button{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+        .builder{
+            width: 100%;
+            padding: 10px;
+            font-size: small;
+            color: red;
+            border: none;
+            cursor: pointer;
+            margin: 0;
+        }
+        .features{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .fe-text{
+            margin: 10px;
+            padding-left: 10px;
+            border-left: 1px solid #838282;
+        }
+        .homepage{
+            position: fixed;
+            top: 50px;
+            left: 0;
+        }
+        @media (max-width:425px){
+            .features{
+                grid-template-columns: 1fr 1fr;
+            }
+            .pic,.breed-pic{
+                width: 320px;
+            }
+            h1{
+                font-size: xx-large;
+            }
+            .pic{
+                margin-left: 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="build-button">
+        <button class="builder">Who made this page ?</button>
+    </div>
+    <h1>
+        American Curl Cat
+    </h1>
+    <img src="https://www.purina.com/sites/default/files/media/image/AmericanCurlSHA_body_6.jpg" class="pic">
+    <p>
+        With unique ears that curl back, and an inquisitive expression reminiscent of happy surprise, the American Curl brings a smile to everyone who meets her.
+    </p>
+    <div class="features">
+        <div class="fe-text"><b>Size:</b><br><br>
+            Small to Medium
+        </div>
+        <div class="fe-text"><b>Color:</b><br><br>
+            White, black, blue, red, cream, chocolate, lilac, silver, golden, plus various patterns and shadings
+        </div>
+        <div class="fe-text"><b>Lifespan:</b><br><br>
+            13+ years
+        </div>
+        <div class="fe-text"><b>Weight:</b><br><br>
+            Male: 7 to 10 pounds, Female: 5 to 8 pounds
+        </div>
+    </div>
+    <div class="homepage">
+        <a href="C:\Users\Dell\Documents\catbreed.html">Homepage</a>
+    </div>
+<script>
+    let bu=document.querySelector(".builder");
+    bu.addEventListener("click",()=>{
+        alert("Manjil Aryal")
+     });
+</script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .build-button{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+        .builder{
+            width: 100%;
+            padding: 10px;
+            font-size: small;
+            color: red;
+            border: none;
+            cursor: pointer;
+            margin: 0;
+        }
+        p{
+            font-size: large;
+        }
+        h1{
+            text-align: center;
+            margin: 50px;
+        }
+        .catscroll{
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+        }
+        .breed-name{
+            text-align: center;
+            font-size: large;
+        }
+        .breed-pic{
+            border: 1px solid #bdbaba;
+        }
+        h5{
+            font-size: large;
+        }
+        .link{
+            margin-left: 10px;
+        }
+        .hint{
+            padding: 5px;
+            position: fixed;
+            bottom: 0px;
+            right: 0;
+            border: 1px solid #838383;
+            border-right: none;
+        }
+        @media(max-width:425px){
+            .pic,.breed-pic{
+                width: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="build-button">
+            <button class="builder">Who made this page ?</button>
+        </div>
+        <h1>
+            All Cat Breeds
+        </h1>
+        <p>
+            A cat or domestic cat is an animal belonging to the group of carnivores and mammals. It protects grain by killing rats. There are many species of cats. It seems that some people keep cats as a hobby. People and communities that keep cats are considered self-sufficient, because cats are also considered a symbol of self-reliance and self-reliance.
+        </p>
+    </div>
+    <div class="catscroll">
+        <div class="breed-pic">
+            <a href="C:\Users\Dell\Documents\Abyssiniancat.html"><img src="https://www.purina.com/sites/default/files/media/image/Abyssinian_body_7.jpg" class="pic"></a>
+            <p class="breed-name">Abyssinian Cat</p>
+        </div>
+        <div class="breed-pic">
+            <a href="American Bobtail Cat.html"><img src="https://www.purina.com/sites/default/files/media/image/AmericanBobtail_body_6.jpg" class="pic"></a>
+            <p class="breed-name">American Bobtail Cat</p>
+        </div>
+        <div class="breed-pic">
+           <a href="C:\Users\Dell\Documents\Americancurl cat.html"><img src="https://www.purina.com/sites/default/files/media/image/AmericanCurlSHA_body_6.jpg" class="pic"></a>
+            <p class="breed-name">American Curl Cat</p>
+        </div>
+        <div class="breed-pic">
+           <a href="C:\Users\Dell\Documents\Americanshorthair cat.html"> <img src="https://www.purina.com/sites/default/files/media/image/AmericanShorthair_body_6.jpg" class="pic"></a>
+            <p class="breed-name">American Shorthair Cat</p>
+        </div>
+        <div class="breed-pic">
+            <a href="C:\Users\Dell\Documents\Americanwire haircat.html"><img src="https://www.purina.com/sites/default/files/media/image/AmericanWirehair_body_6.jpg" class="pic"></a>
+            <p class="breed-name">American Wirehair Cat</p>
+        </div>
+
+    </div>
+    <div style="display: inline;">
+        <h5>Scientific classification</h5>
+        <div>Domain:<a href="https://en.wikipedia.org/wiki/Eukaryote" class="link">Eukaryota</a></div>
+        <div>Kingdom:<a href="https://en.wikipedia.org/wiki/Animalia" class="link">Animalia</a></div>
+        <div>Phylum:<a href="https://en.wikipedia.org/wiki/Chordata" class="link">Chordata</a></div>
+        <div>Class:<a href="https://en.wikipedia.org/wiki/Mammalia" class="link">Mammalia</a></div>
+        <div>Order:<a href="https://en.wikipedia.org/wiki/Carnivora" class="link">Carnivora</a></div>
+        <div>Suborder:<a href="https://en.wikipedia.org/wiki/Feliformia" class="link">Feliformia</a></div>
+        <div>Family:<a href="https://en.wikipedia.org/wiki/Felidae" class="link">Felidae</a></div>
+        <div>Subfamily:<a href="https://en.wikipedia.org/wiki/Felinae" class="link">Felinae</a></div>
+        <div>Genus:<a href="https://en.wikipedia.org/wiki/Felis" class="link">Felis</a></div>
+        <div>Species:<b>Felis Catus</b></div>
+
+    </div>
+    <div class="hint">
+        <b>For details of breed:</b><br><br>
+        Click the picture !
+    </div>
+    <script>
+        let bu=document.querySelector(".builder");
+        bu.addEventListener("click",()=>{
+            alert("Manjil Aryal")
+        });
+    </script>
+</body>
+</html>
